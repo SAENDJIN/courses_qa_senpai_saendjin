@@ -6,4 +6,4 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /.vs/
-/.vscode
+.vscode\settings.json
