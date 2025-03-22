@@ -102,7 +102,23 @@ header.blur(); // Зняття фокуса
 // https://playwright.dev/docs/locators
 
 
+// # Запуск конкретних тестів у Playwright
+// ## Запуск одного тестового файлу
+// npx playwright test landing-page.spec.ts
 
 
+// ## Запуск тестів з кількох директорій
+// npx playwright test tests/todo-page/ tests/landing-page/
+
+
+// ## Запуск файлів, що містять певні ключові слова у назві
+// Щоб запустити файли, які містять у назві landing або login, просто передайте ці ключові слова у CLI:
+// npx playwright test landing login
+
+// ## Запуск тесту з конкретним заголовком
+// Щоб запустити тест із певною назвою, використовуйте прапорець -g, після якого вкажіть заголовок тесту:
+// npx playwright test -g "add a todo item"
+
+// https://playwright.dev/docs/running-tests
 
 
