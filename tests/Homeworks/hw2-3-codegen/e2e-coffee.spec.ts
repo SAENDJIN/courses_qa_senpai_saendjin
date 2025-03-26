@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { ECDH } from 'crypto';
 
 // 1. Check all 9 coffee is visible
 test('CC-1 Is all coffee is visible', async ({ page }) => {
