@@ -37,10 +37,11 @@ test('Create 3 articles', async ({ page }) => {
     }
 
     await page.goto('https://demo.learnwebdriverio.com/');
-    for (let i = 0; i < 3; i++) { 
-        const content = await page.locator(article_preview).nth(i).textContent();
-        console.log(content)
-        const reversedIndex = 2 - i; 
+    for (let i = 0; i < 3; i++) { //цикл от 0 до 2
+        const content = await page.locator(article_preview).nth(i).textContent(); // берем первый елемент на странице то есть нулевой (но в нем лежит текст с двойкой)
+        console.log(content) // просто проверял что нахожу
+        const reversedIndex = 2 - i; // разворачиваем значение в цикле ибо если оставить просто i он будет находить первым текст с двойкой но проверяет 0
+        // console.log(--i) - тут я пытался понять как мне поставить что бы убрать reversedIndex
         await expect(page.locator(preview_tittle).nth(reversedIndex))
         .toContainText(`Test_tittle_${i}`);
     }
