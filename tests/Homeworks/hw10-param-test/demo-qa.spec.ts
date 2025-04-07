@@ -29,15 +29,6 @@ async function fillForm(page, data) { // {fullName, email, currentAddress, perma
     await locators.permanentAddressInput().fill(data.permanentAddress);
     await locators.submitButton().click();
 }
-// const fillForm = async (page, data) => {
-//     const locators = getLocators(page)
-
-//     await locators.nameInput().fill(data.fullName);
-//     await locators.emailInput().fill(data.email);
-//     await locators.currentAddressInput().fill(data.currentAddress);
-//     await locators.permanentAddressInput().fill(data.permanentAddress);
-//     await locators.submitButton().click();
-// }
 
 async function verifyForm(page, data) {
     const locators = getLocators(page);
