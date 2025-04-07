@@ -86,7 +86,7 @@ console.log(bubbleSort(arr1))
 function createArrayYear() {
     const numbers = [];
 
-    for (let i = 0; i <= 345; i++) {
+    for (let i = 1; i <= 345; i++) {
         numbers.push(i)
     }
     return numbers
