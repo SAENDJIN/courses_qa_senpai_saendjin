@@ -1,4 +1,3 @@
-import { da } from '@faker-js/faker';
 import { test, expect } from '@playwright/test';
 import path from 'path';
 
@@ -80,7 +79,7 @@ async function verifyForm(page, data) {
     await expect(locators.finalForm()).toContainText(getFormattedToday())
     await expect(locators.finalForm()).toContainText('Maths')
     await expect(locators.finalForm()).toContainText('Sports')
-    await expect(locators.finalForm()).toContainText(fileName) //edit
+    await expect(locators.finalForm()).toContainText(fileName)
     await expect(locators.finalForm()).toContainText(data.currentAddress)
     await expect(locators.finalForm()).toContainText('NCR Delhi')
 }
