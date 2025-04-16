@@ -46,7 +46,7 @@ function RegistrationForm(page: Page) {
     await locators.genderCheckBox().click();
   };
 
-  this.setMobile = async (phone: number) => {
+  this.setMobile = async (phone: string) => {
     await locators.mobilePhoneInput().fill(phone);
   };
 
