@@ -7,3 +7,4 @@ node_modules/
 /playwright/.cache/
 /.vs/
 .vscode\settings.json
+console-errors.txt
